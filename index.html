@@ -57,11 +57,13 @@
             border-color: var(--color-primary);
         }
 
-        /* Profile Picture Styling */
+        /* Profile Picture Styling with Centering Fix */
         .profile-pic {
             width: 150px;
             height: 150px;
             object-fit: cover;
+            /* FIX: Ensures the central part of the image is visible */
+            object-position: center; 
             border: 4px solid var(--color-primary);
             box-shadow: 0 0 15px rgba(0, 191, 255, 0.6);
             transition: transform 0.3s ease;
@@ -111,7 +113,7 @@
             </p>
 
             <div class="flex flex-wrap justify-center gap-4 scroll-reveal delay-500">
-                <a href="S BHARATHI.pdf" download="S_Bharathi_Resume.pdf" class="px-6 py-3 font-semibold rounded-lg shadow-xl transition duration-300 hover:opacity-80 border-2" style="background-color: var(--color-primary); color: var(--color-background); border-color: var(--color-primary);">
+                <a href="./S_Bharathi_Resume.pdf" download="S_Bharathi_Resume.pdf" class="px-6 py-3 font-semibold rounded-lg shadow-xl transition duration-300 hover:opacity-80 border-2" style="background-color: var(--color-primary); color: var(--color-background); border-color: var(--color-primary);">
                     <i class="fas fa-download mr-2"></i> Download Resume
                 </a>
                 
@@ -200,6 +202,10 @@
             <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                 
                 <div class="project-card p-6 rounded-xl border-2 border-gray-700 bg-gray-900 shadow-xl transition-all duration-300 scroll-reveal delay-100">
+                    <div class="h-40 bg-gray-800 rounded-lg mb-4 flex items-center justify-center text-gray-500">
+                        
+                    </div>
+
                     <h3 class="text-2xl font-semibold mb-3" style="color: var(--color-primary);">Diabetes Prediction (ML)</h3>
                     <p class="text-gray-400 mb-4">
                         Built a user-friendly web application using Machine Learning for real-time diabetes risk assessment from user health data.
@@ -207,16 +213,28 @@
                     <p class="text-sm font-medium mb-4">
                         <span class="font-bold text-white">Focus:</span> Enabled real-time risk assessment with visual insights via Matplotlib and Seaborn.
                     </p>
-                    <div class="flex flex-wrap gap-2 text-xs font-semibold">
+                    <div class="flex flex-wrap gap-2 text-xs font-semibold mb-4">
                         <span class="bg-blue-600/50 px-3 py-1 rounded-full">Python</span>
                         <span class="bg-blue-600/50 px-3 py-1 rounded-full">Machine Learning</span>
                         <span class="bg-blue-600/50 px-3 py-1 rounded-full">Streamlit</span>
                         <span class="bg-blue-600/50 px-3 py-1 rounded-full">Random Forest</span>
                     </div>
-                    <a href="#" class="mt-4 inline-block text-sm font-bold hover:text-white" style="color: var(--color-primary);">View Code <i class="fas fa-arrow-right ml-1"></i></a>
+                    
+                    <div class="flex gap-4">
+                         <a href="#" target="_blank" class="text-sm font-bold flex items-center hover:text-white transition duration-300" style="color: var(--color-primary);">
+                            <i class="fab fa-github mr-2"></i> GitHub Repository
+                        </a>
+                        <a href="#" target="_blank" class="text-sm font-bold flex items-center hover:text-white transition duration-300" style="color: var(--color-primary);">
+                            <i class="fas fa-globe mr-2"></i> Live Demo
+                        </a>
+                    </div>
                 </div>
 
                 <div class="project-card p-6 rounded-xl border-2 border-gray-700 bg-gray-900 shadow-xl transition-all duration-300 scroll-reveal delay-200">
+                    <div class="h-40 bg-gray-800 rounded-lg mb-4 flex items-center justify-center text-gray-500">
+                        
+                    </div>
+                    
                     <h3 class="text-2xl font-semibold mb-3" style="color: var(--color-primary);">Museum Ticket Booking (ChatBot)</h3>
                     <p class="text-gray-400 mb-4">
                         Designed a multilingual chatbot system for ticket booking, exhibit info, and confirmations, enhancing user experience.
@@ -224,13 +242,21 @@
                     <p class="text-sm font-medium mb-4">
                         <span class="font-bold text-white">Achievement:</span> Shortlisted for the **MSME Hackathon 4.0 2024** for this innovative idea.
                     </p>
-                    <div class="flex flex-wrap gap-2 text-xs font-semibold">
+                    <div class="flex flex-wrap gap-2 text-xs font-semibold mb-4">
                         <span class="bg-yellow-600/50 px-3 py-1 rounded-full">Java</span>
                         <span class="bg-yellow-600/50 px-3 py-1 rounded-full">DialogFlow</span>
                         <span class="bg-yellow-600/50 px-3 py-1 rounded-full">HTML/CSS</span>
                         <span class="bg-yellow-600/50 px-3 py-1 rounded-full">Oracle JDBC</span>
                     </div>
-                    <a href="#" class="mt-4 inline-block text-sm font-bold hover:text-white" style="color: var(--color-primary);">View Demo <i class="fas fa-arrow-right ml-1"></i></a>
+
+                    <div class="flex gap-4">
+                         <a href="#" target="_blank" class="text-sm font-bold flex items-center hover:text-white transition duration-300" style="color: var(--color-primary);">
+                            <i class="fab fa-github mr-2"></i> GitHub Repository
+                        </a>
+                        <a href="#" target="_blank" class="text-sm font-bold flex items-center hover:text-white transition duration-300" style="color: var(--color-primary);">
+                            <i class="fas fa-globe mr-2"></i> Live Demo
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -241,9 +267,9 @@
             <h2 class="text-4xl font-extrabold mb-10 text-center scroll-reveal" style="color: var(--color-primary);">Journey & Achievements</h2>
             
             <div class="max-w-4xl mx-auto space-y-12">
-                
+
                 <div class="scroll-reveal delay-100">
-                    <h3 class="text-3xl font-bold mb-6 text-white"><i class="fas fa-briefcase mr-3" style="color: var(--color-primary);"></i> Internships</h3>
+                    <h3 class="text-3xl font-bold mb-6 text-white"><i class="fas fa-briefcase mr-3" style="color: var(--color-primary);"></i> Internships & Experience</h3>
                     <ul class="space-y-6">
                         <li class="p-4 rounded-lg bg-gray-900 border-l-4 border-blue-500 shadow-md">
                             <p class="text-xl font-semibold">Java Full Stack Intern</p>
@@ -259,9 +285,9 @@
                         </li>
                     </ul>
                 </div>
-
+                
                 <div class="scroll-reveal delay-200">
-                    <h3 class="text-3xl font-bold mb-6 text-white"><i class="fas fa-graduation-cap mr-3" style="color: var(--color-primary);"></i> Education & Awards</h3>
+                    <h3 class="text-3xl font-bold mb-6 text-white"><i class="fas fa-graduation-cap mr-3" style="color: var(--color-primary);"></i> Education & Key Achievements</h3>
                     <ul class="space-y-6">
                             <li class="p-4 rounded-lg bg-gray-900 border-l-4 border-yellow-500 shadow-md">
                             <p class="text-xl font-semibold text-yellow-300">Academic Topper</p>
@@ -388,5 +414,3 @@
     </script>
 </body>
 </html>
-
-
