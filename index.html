@@ -4,11 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S Bharathi | Aspiring Full Stack Developer</title>
-    <!-- Tailwind CSS CDN for modern, responsive utilities -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Inter Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
     <style>
@@ -77,7 +74,6 @@
 </head>
 <body class="selection:bg-blue-800 selection:text-white">
 
-    <!-- NAVIGATION BAR -->
     <nav class="sticky top-0 z-50 bg-gray-900 bg-opacity-95 backdrop-blur-sm shadow-xl">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
@@ -95,14 +91,11 @@
         </div>
     </nav>
 
-    <!-- MAIN CONTENT CONTAINER -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
 
-        <!-- 1. HOME/HERO SECTION -->
         <section id="home" class="min-h-[90vh] flex flex-col justify-center items-center text-center p-8">
             <div class="scroll-reveal delay-100">
-                <!-- Placeholder for Profile Picture -->
-                <img src=image.jpg class="profile-pic rounded-full mx-auto mb-6">
+                <img src="image.jpg" class="profile-pic rounded-full mx-auto mb-6">
             </div>
 
             <h1 class="text-5xl md:text-7xl font-extrabold mb-4 scroll-reveal delay-200" style="color: var(--color-text);">
@@ -117,7 +110,11 @@
                 Motivated Computer Science student with a strong academic background (CGPA: 9.221) and a passion for coding. Proficient in problem-solving, DSA, and developing innovative solutions.
             </p>
 
-            <div class="flex space-x-4 scroll-reveal delay-500">
+            <div class="flex flex-wrap justify-center gap-4 scroll-reveal delay-500">
+                <a href="S BHARATHI.pdf" download="S_Bharathi_Resume.pdf" class="px-6 py-3 font-semibold rounded-lg shadow-xl transition duration-300 hover:opacity-80 border-2" style="background-color: var(--color-primary); color: var(--color-background); border-color: var(--color-primary);">
+                    <i class="fas fa-download mr-2"></i> Download Resume
+                </a>
+                
                 <a href="#projects" class="px-6 py-3 font-semibold rounded-lg shadow-xl transition duration-300 hover:bg-white hover:text-gray-900 border-2" style="background-color: var(--color-primary); color: var(--color-background); border-color: var(--color-primary);">
                     View Projects
                 </a>
@@ -129,7 +126,6 @@
 
         <hr class="border-gray-800 my-16">
 
-        <!-- 2. ABOUT ME SECTION -->
         <section id="about" class="py-16">
             <h2 class="text-4xl font-extrabold mb-10 text-center scroll-reveal" style="color: var(--color-primary);">About Me</h2>
             <div class="max-w-4xl mx-auto text-gray-300 text-lg space-y-6 scroll-reveal">
@@ -154,12 +150,10 @@
 
         <hr class="border-gray-800 my-16">
 
-        <!-- 3. SKILLS SECTION -->
         <section id="skills" class="py-16">
             <h2 class="text-4xl font-extrabold mb-10 text-center scroll-reveal" style="color: var(--color-primary);">Technical Toolkit</h2>
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
                 
-                <!-- Programming Languages -->
                 <div class="p-6 rounded-xl border border-gray-700 bg-gray-900 shadow-xl scroll-reveal delay-100">
                     <h3 class="text-2xl font-semibold mb-4" style="color: var(--color-primary);"><i class="fas fa-code mr-2"></i> Languages & Core</h3>
                     <div class="flex flex-wrap gap-3">
@@ -171,7 +165,6 @@
                     </div>
                 </div>
 
-                <!-- Web Development -->
                 <div class="p-6 rounded-xl border border-gray-700 bg-gray-900 shadow-xl scroll-reveal delay-200">
                     <h3 class="text-2xl font-semibold mb-4" style="color: var(--color-primary);"><i class="fas fa-desktop mr-2"></i> Web & Database</h3>
                     <div class="flex flex-wrap gap-3">
@@ -183,7 +176,6 @@
                     </div>
                 </div>
 
-                <!-- Problem Solving Platforms -->
                 <div class="p-6 rounded-xl border border-gray-700 bg-gray-900 shadow-xl scroll-reveal delay-300">
                     <h3 class="text-2xl font-semibold mb-4" style="color: var(--color-primary);"><i class="fas fa-trophy mr-2"></i> Coding Practice</h3>
                     <p class="text-xl font-bold mb-3">LeetCode: <span style="color: var(--color-primary);">150+ Problems Solved</span></p>
@@ -203,12 +195,10 @@
 
         <hr class="border-gray-800 my-16">
 
-        <!-- 4. PROJECTS SECTION -->
         <section id="projects" class="py-16">
             <h2 class="text-4xl font-extrabold mb-10 text-center scroll-reveal" style="color: var(--color-primary);">Key Projects</h2>
             <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                 
-                <!-- Project 1: Diabetes Prediction -->
                 <div class="project-card p-6 rounded-xl border-2 border-gray-700 bg-gray-900 shadow-xl transition-all duration-300 scroll-reveal delay-100">
                     <h3 class="text-2xl font-semibold mb-3" style="color: var(--color-primary);">Diabetes Prediction (ML)</h3>
                     <p class="text-gray-400 mb-4">
@@ -226,7 +216,6 @@
                     <a href="#" class="mt-4 inline-block text-sm font-bold hover:text-white" style="color: var(--color-primary);">View Code <i class="fas fa-arrow-right ml-1"></i></a>
                 </div>
 
-                <!-- Project 2: Museum Ticket Booking ChatBot -->
                 <div class="project-card p-6 rounded-xl border-2 border-gray-700 bg-gray-900 shadow-xl transition-all duration-300 scroll-reveal delay-200">
                     <h3 class="text-2xl font-semibold mb-3" style="color: var(--color-primary);">Museum Ticket Booking (ChatBot)</h3>
                     <p class="text-gray-400 mb-4">
@@ -248,13 +237,11 @@
 
         <hr class="border-gray-800 my-16">
 
-        <!-- 5. EXPERIENCE & EDUCATION SECTION -->
         <section id="experience" class="py-16">
             <h2 class="text-4xl font-extrabold mb-10 text-center scroll-reveal" style="color: var(--color-primary);">Journey & Achievements</h2>
             
             <div class="max-w-4xl mx-auto space-y-12">
                 
-                <!-- Internships -->
                 <div class="scroll-reveal delay-100">
                     <h3 class="text-3xl font-bold mb-6 text-white"><i class="fas fa-briefcase mr-3" style="color: var(--color-primary);"></i> Internships</h3>
                     <ul class="space-y-6">
@@ -273,22 +260,18 @@
                     </ul>
                 </div>
 
-                <!-- Education & Awards -->
                 <div class="scroll-reveal delay-200">
                     <h3 class="text-3xl font-bold mb-6 text-white"><i class="fas fa-graduation-cap mr-3" style="color: var(--color-primary);"></i> Education & Awards</h3>
                     <ul class="space-y-6">
-                         <!-- Top Achievement -->
-                        <li class="p-4 rounded-lg bg-gray-900 border-l-4 border-yellow-500 shadow-md">
+                            <li class="p-4 rounded-lg bg-gray-900 border-l-4 border-yellow-500 shadow-md">
                             <p class="text-xl font-semibold text-yellow-300">Academic Topper</p>
                             <p class="text-sm text-gray-400">Department of CSE | 2024-2025</p>
                         </li>
-                        <!-- B.E. Degree -->
                         <li class="p-4 rounded-lg bg-gray-900 border-l-4 border-blue-500 shadow-md">
                             <p class="text-xl font-semibold">B.E. Computer Science and Engineering</p>
                             <p class="text-sm text-gray-400">KNOWLEDGE INSTITUTE OF TECHNOLOGY (2022-2026)</p>
                             <p class="text-base font-medium mt-1" style="color: var(--color-primary);">CGPA: 9.221 (till 6th Sem)</p>
                         </li>
-                        <!-- Hackathon Shortlist -->
                         <li class="p-4 rounded-lg bg-gray-900 border-l-4 border-blue-500 shadow-md">
                             <p class="text-xl font-semibold">Hackathon Shortlist: Defend the Kingdom</p>
                             <p class="text-sm text-gray-400">Infineon Launchpad Hackathon 2025</p>
@@ -301,7 +284,6 @@
 
         <hr class="border-gray-800 my-16">
 
-        <!-- 6. CONTACT SECTION -->
         <section id="contact" class="py-16 text-center">
             <h2 class="text-4xl font-extrabold mb-6 scroll-reveal" style="color: var(--color-primary);">Get In Touch</h2>
             <p class="max-w-xl mx-auto text-gray-400 text-lg mb-10 scroll-reveal">
@@ -309,15 +291,12 @@
             </p>
 
             <div class="flex justify-center space-x-8 scroll-reveal">
-                <!-- Email -->
                 <a href="mailto:bharathishekar005@gmail.com" class="p-4 rounded-full bg-gray-900 hover:bg-gray-800 transition duration-300 text-2xl" title="Email" style="color: var(--color-primary);">
                     <i class="fas fa-envelope"></i>
                 </a>
-                <!-- LinkedIn -->
                 <a href="https://www.linkedin.com/in/Bharathi-linkdedin" target="_blank" class="p-4 rounded-full bg-gray-900 hover:bg-gray-800 transition duration-300 text-2xl" title="LinkedIn" style="color: var(--color-primary);">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <!-- Phone (Mobile only) -->
                 <a href="tel:+918072712477" class="p-4 rounded-full bg-gray-900 hover:bg-gray-800 transition duration-300 text-2xl" title="Call" style="color: var(--color-primary);">
                     <i class="fas fa-phone"></i>
                 </a>
@@ -330,14 +309,15 @@
         
     </div>
 
-    <!-- FOOTER -->
     <footer class="text-center py-6 border-t border-gray-800">
         <p class="text-gray-500 text-sm">
             Designed and Coded with passion by S Bharathi &copy; 2025
         </p>
+        <p class="text-gray-500 text-sm mt-1">
+            <a href="./S_Bharathi_Resume.pdf" download="S_Bharathi_Resume.pdf" class="hover:text-blue-400 transition duration-200" style="color: var(--color-primary);">Download Latest Resume</a>
+        </p>
     </footer>
 
-    <!-- JAVASCRIPT FOR ANIMATIONS AND SCROLL REVEAL -->
     <script>
         // === 1. TYPING ANIMATION SCRIPT ===
         document.addEventListener("DOMContentLoaded", function() {
@@ -408,4 +388,3 @@
     </script>
 </body>
 </html>
-
