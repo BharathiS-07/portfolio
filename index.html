@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S Bharathi | Aspiring Full Stack Developer</title>
+    <!-- Tailwind CSS CDN for modern, responsive utilities -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        /* Define custom Tailwind theme variables and config */
+        :root {
+            --color-primary: #00BFFF; /* Deep Sky Blue - Accent */
+            --color-background: #0D1117; /* GitHub Dark Mode */
+            --color-card: #161B22; /* Slightly lighter card background */
+            --color-text: #F0F6FC;
+        }
+
+        /* Apply custom font */
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-background);
+            color: var(--color-text);
+        }
+
+        /* Typing Cursor Style */
+        .typing-cursor {
+            border-right: 2px solid var(--color-primary);
+            animation: blink-caret 0.75s step-end infinite;
+        }
+
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: var(--color-primary); }
+        }
+
+        /* Scroll Reveal Animation Styles (Hidden initially) */
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .scroll-reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Project Card Hover Effect */
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 191, 255, 0.15);
+            border-color: var(--color-primary);
+        }
+
+        /* Profile Picture Styling */
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 4px solid var(--color-primary);
+            box-shadow: 0 0 15px rgba(0, 191, 255, 0.6);
+            transition: transform 0.3s ease;
+        }
+        .profile-pic:hover {
+            transform: scale(1.05);
+        }
+
+    </style>
+</head>
+<body class="selection:bg-blue-800 selection:text-white">
+
+    <!-- NAVIGATION BAR -->
+    <nav class="sticky top-0 z-50 bg-gray-900 bg-opacity-95 backdrop-blur-sm shadow-xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0 text-xl font-extrabold" style="color: var(--color-primary);">
+                    <a href="#home">BHARATHI</a>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#about" class="text-gray-300 hover:text-white hover:border-b-2 hover:border-blue-500 transition duration-300 px-3 py-2 text-sm font-medium">About</a>
+                    <a href="#skills" class="text-gray-300 hover:text-white hover:border-b-2 hover:border-blue-500 transition duration-300 px-3 py-2 text-sm font-medium">Skills</a>
+                    <a href="#projects" class="text-gray-300 hover:text-white hover:border-b-2 hover:border-blue-500 transition duration-300 px-3 py-2 text-sm font-medium">Projects</a>
+                    <a href="#experience" class="text-gray-300 hover:text-white hover:border-b-2 hover:border-blue-500 transition duration-300 px-3 py-2 text-sm font-medium">Experience</a>
+                    <a href="#contact" class="text-gray-300 hover:text-white hover:border-b-2 hover:border-blue-500 transition duration-300 px-3 py-2 text-sm font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN CONTENT CONTAINER -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+
+        <!-- 1. HOME/HERO SECTION -->
+        <section id="home" class="min-h-[90vh] flex flex-col justify-center items-center text-center p-8">
+            <div class="scroll-reveal delay-100">
+                <!-- Placeholder for Profile Picture -->
+                <img src=D:\works\portfolio\images\cs-1.jpg class="profile-pic rounded-full mx-auto mb-6">
+            </div>
+
+            <h1 class="text-5xl md:text-7xl font-extrabold mb-4 scroll-reveal delay-200" style="color: var(--color-text);">
+                Hi, I'm <span class="text-7xl md:text-8xl" style="color: var(--color-primary);">S Bharathi.</span>
+            </h1>
+
+            <h2 class="text-2xl md:text-4xl font-medium mb-6 scroll-reveal delay-300 h-10 md:h-12">
+                An Aspiring <span id="typewriter-text" class="font-bold" style="color: var(--color-primary);"></span>
+            </h2>
+
+            <p class="max-w-3xl text-lg text-gray-400 mb-10 scroll-reveal delay-400">
+                Motivated Computer Science student with a strong academic background (CGPA: 9.221) and a passion for coding. Proficient in problem-solving, DSA, and developing innovative solutions.
+            </p>
+
+            <div class="flex space-x-4 scroll-reveal delay-500">
+                <a href="#projects" class="px-6 py-3 font-semibold rounded-lg shadow-xl transition duration-300 hover:bg-white hover:text-gray-900 border-2" style="background-color: var(--color-primary); color: var(--color-background); border-color: var(--color-primary);">
+                    View Projects
+                </a>
+                <a href="mailto:bharathishekar005@gmail.com" class="px-6 py-3 font-semibold rounded-lg transition duration-300 border-2 border-gray-600 hover:border-white hover:text-white">
+                    Get In Touch
+                </a>
+            </div>
+        </section>
+
+        <hr class="border-gray-800 my-16">
+
+        <!-- 2. ABOUT ME SECTION -->
+        <section id="about" class="py-16">
+            <h2 class="text-4xl font-extrabold mb-10 text-center scroll-reveal" style="color: var(--color-primary);">About Me</h2>
+            <div class="max-w-4xl mx-auto text-gray-300 text-lg space-y-6 scroll-reveal">
+                <p>
+                    I am a dedicated B.E. Computer Science and Engineering student at **KNOWLEDGE INSTITUTE OF TECHNOLOGY**, currently pursuing my degree with an outstanding **CGPA of 9.221**. My primary focus and area of interest is **Full Stack Development**.
+                </p>
+                <p>
+                    I am driven by impactful collaboration and committed to continuously learning and growing in the software development field. I thrive on creating innovative solutions, as demonstrated by my work in Machine Learning and ChatBot systems.
+                </p>
+                <div class="p-6 rounded-lg border border-gray-700 bg-gray-900 shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-3" style="color: var(--color-primary);">Personal Traits:</h3>
+                    <div class="flex flex-wrap gap-4 text-sm font-medium">
+                        <span class="bg-blue-900/50 text-blue-300 px-3 py-1 rounded-full"><i class="fas fa-brain mr-2"></i>Quick Learner</span>
+                        <span class="bg-blue-900/50 text-blue-300 px-3 py-1 rounded-full"><i class="fas fa-users mr-2"></i>Leadership</span>
+                        <span class="bg-blue-900/50 text-blue-300 px-3 py-1 rounded-full"><i class="fas fa-comments mr-2"></i>Communication</span>
+                        <span class="bg-blue-900/50 text-blue-300 px-3 py-1 rounded-full"><i class="fas fa-check-circle mr-2"></i>Punctual</span>
+                        <span class="bg-blue-900/50 text-blue-300 px-3 py-1 rounded-full"><i class="fas fa-lightbulb mr-2"></i>Problem-Solving</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-gray-800 my-16">
+
+        <!-- 3. SKILLS SECTION -->
+        <section id="skills" class="py-16">
+            <h2 class="text-4xl font-extrabold mb-10 text-center scroll-reveal" style="color: var(--color-primary);">Technical Toolkit</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                
+                <!-- Programming Languages -->
+                <div class="p-6 rounded-xl border border-gray-700 bg-gray-900 shadow-xl scroll-reveal delay-100">
+                    <h3 class="text-2xl font-semibold mb-4" style="color: var(--color-primary);"><i class="fas fa-code mr-2"></i> Languages & Core</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-yellow-700/50 text-yellow-200 px-4 py-1 rounded-full">Java</span>
+                        <span class="bg-blue-700/50 text-blue-200 px-4 py-1 rounded-full">Python</span>
+                        <span class="bg-red-700/50 text-red-200 px-4 py-1 rounded-full">C</span>
+                        <span class="bg-green-700/50 text-green-200 px-4 py-1 rounded-full">SQL</span>
+                        <span class="bg-purple-700/50 text-purple-200 px-4 py-1 rounded-full">DSA</span>
+                    </div>
+                </div>
+
+                <!-- Web Development -->
+                <div class="p-6 rounded-xl border border-gray-700 bg-gray-900 shadow-xl scroll-reveal delay-200">
+                    <h3 class="text-2xl font-semibold mb-4" style="color: var(--color-primary);"><i class="fas fa-desktop mr-2"></i> Web & Database</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-orange-700/50 text-orange-200 px-4 py-1 rounded-full">HTML</span>
+                        <span class="bg-sky-700/50 text-sky-200 px-4 py-1 rounded-full">CSS</span>
+                        <span class="bg-gray-700/50 text-gray-200 px-4 py-1 rounded-full">DialogFlow</span>
+                        <span class="bg-emerald-700/50 text-emerald-200 px-4 py-1 rounded-full">Streamlit</span>
+                        <span class="bg-slate-700/50 text-slate-200 px-4 py-1 rounded-full">Oracle with JDBC</span>
+                    </div>
+                </div>
+
+                <!-- Problem Solving Platforms -->
+                <div class="p-6 rounded-xl border border-gray-700 bg-gray-900 shadow-xl scroll-reveal delay-300">
+                    <h3 class="text-2xl font-semibold mb-4" style="color: var(--color-primary);"><i class="fas fa-trophy mr-2"></i> Coding Practice</h3>
+                    <p class="text-xl font-bold mb-3">LeetCode: <span style="color: var(--color-primary);">150+ Problems Solved</span></p>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-teal-700/50 text-teal-200 px-4 py-1 rounded-full">HackerRank</span>
+                        <span class="bg-amber-700/50 text-amber-200 px-4 py-1 rounded-full">GeeksForGeeks</span>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-sm text-gray-400 mb-1">DSA Proficiency Bar</p>
+                        <div class="h-2 bg-gray-700 rounded-full overflow-hidden">
+                            <div class="h-2 bg-gradient-to-r from-blue-400 to-blue-600" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-gray-800 my-16">
+
+        <!-- 4. PROJECTS SECTION -->
+        <section id="projects" class="py-16">
+            <h2 class="text-4xl font-extrabold mb-10 text-center scroll-reveal" style="color: var(--color-primary);">Key Projects</h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                
+                <!-- Project 1: Diabetes Prediction -->
+                <div class="project-card p-6 rounded-xl border-2 border-gray-700 bg-gray-900 shadow-xl transition-all duration-300 scroll-reveal delay-100">
+                    <h3 class="text-2xl font-semibold mb-3" style="color: var(--color-primary);">Diabetes Prediction (ML)</h3>
+                    <p class="text-gray-400 mb-4">
+                        Built a user-friendly web application using Machine Learning for real-time diabetes risk assessment from user health data.
+                    </p>
+                    <p class="text-sm font-medium mb-4">
+                        <span class="font-bold text-white">Focus:</span> Enabled real-time risk assessment with visual insights via Matplotlib and Seaborn.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-xs font-semibold">
+                        <span class="bg-blue-600/50 px-3 py-1 rounded-full">Python</span>
+                        <span class="bg-blue-600/50 px-3 py-1 rounded-full">Machine Learning</span>
+                        <span class="bg-blue-600/50 px-3 py-1 rounded-full">Streamlit</span>
+                        <span class="bg-blue-600/50 px-3 py-1 rounded-full">Random Forest</span>
+                    </div>
+                    <a href="#" class="mt-4 inline-block text-sm font-bold hover:text-white" style="color: var(--color-primary);">View Code <i class="fas fa-arrow-right ml-1"></i></a>
+                </div>
+
+                <!-- Project 2: Museum Ticket Booking ChatBot -->
+                <div class="project-card p-6 rounded-xl border-2 border-gray-700 bg-gray-900 shadow-xl transition-all duration-300 scroll-reveal delay-200">
+                    <h3 class="text-2xl font-semibold mb-3" style="color: var(--color-primary);">Museum Ticket Booking (ChatBot)</h3>
+                    <p class="text-gray-400 mb-4">
+                        Designed a multilingual chatbot system for ticket booking, exhibit info, and confirmations, enhancing user experience.
+                    </p>
+                    <p class="text-sm font-medium mb-4">
+                        <span class="font-bold text-white">Achievement:</span> Shortlisted for the **MSME Hackathon 4.0 2024** for this innovative idea.
+                    </p>
+                    <div class="flex flex-wrap gap-2 text-xs font-semibold">
+                        <span class="bg-yellow-600/50 px-3 py-1 rounded-full">Java</span>
+                        <span class="bg-yellow-600/50 px-3 py-1 rounded-full">DialogFlow</span>
+                        <span class="bg-yellow-600/50 px-3 py-1 rounded-full">HTML/CSS</span>
+                        <span class="bg-yellow-600/50 px-3 py-1 rounded-full">Oracle JDBC</span>
+                    </div>
+                    <a href="#" class="mt-4 inline-block text-sm font-bold hover:text-white" style="color: var(--color-primary);">View Demo <i class="fas fa-arrow-right ml-1"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <hr class="border-gray-800 my-16">
+
+        <!-- 5. EXPERIENCE & EDUCATION SECTION -->
+        <section id="experience" class="py-16">
+            <h2 class="text-4xl font-extrabold mb-10 text-center scroll-reveal" style="color: var(--color-primary);">Journey & Achievements</h2>
+            
+            <div class="max-w-4xl mx-auto space-y-12">
+                
+                <!-- Internships -->
+                <div class="scroll-reveal delay-100">
+                    <h3 class="text-3xl font-bold mb-6 text-white"><i class="fas fa-briefcase mr-3" style="color: var(--color-primary);"></i> Internships</h3>
+                    <ul class="space-y-6">
+                        <li class="p-4 rounded-lg bg-gray-900 border-l-4 border-blue-500 shadow-md">
+                            <p class="text-xl font-semibold">Java Full Stack Intern</p>
+                            <p class="text-sm text-gray-400">Dev Technology Solutions (1 Month)</p>
+                        </li>
+                        <li class="p-4 rounded-lg bg-gray-900 border-l-4 border-blue-500 shadow-md">
+                            <p class="text-xl font-semibold">Data Science Intern</p>
+                            <p class="text-sm text-gray-400">Lets Intern (2 Months)</p>
+                        </li>
+                        <li class="p-4 rounded-lg bg-gray-900 border-l-4 border-blue-500 shadow-md">
+                            <p class="text-xl font-semibold">SQL & Data Analytics Intern</p>
+                            <p class="text-sm text-gray-400">Internshala (6 Weeks)</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Education & Awards -->
+                <div class="scroll-reveal delay-200">
+                    <h3 class="text-3xl font-bold mb-6 text-white"><i class="fas fa-graduation-cap mr-3" style="color: var(--color-primary);"></i> Education & Awards</h3>
+                    <ul class="space-y-6">
+                         <!-- Top Achievement -->
+                        <li class="p-4 rounded-lg bg-gray-900 border-l-4 border-yellow-500 shadow-md">
+                            <p class="text-xl font-semibold text-yellow-300">Academic Topper</p>
+                            <p class="text-sm text-gray-400">Department of CSE | 2024-2025</p>
+                        </li>
+                        <!-- B.E. Degree -->
+                        <li class="p-4 rounded-lg bg-gray-900 border-l-4 border-blue-500 shadow-md">
+                            <p class="text-xl font-semibold">B.E. Computer Science and Engineering</p>
+                            <p class="text-sm text-gray-400">KNOWLEDGE INSTITUTE OF TECHNOLOGY (2022-2026)</p>
+                            <p class="text-base font-medium mt-1" style="color: var(--color-primary);">CGPA: 9.221 (till 6th Sem)</p>
+                        </li>
+                        <!-- Hackathon Shortlist -->
+                        <li class="p-4 rounded-lg bg-gray-900 border-l-4 border-blue-500 shadow-md">
+                            <p class="text-xl font-semibold">Hackathon Shortlist: Defend the Kingdom</p>
+                            <p class="text-sm text-gray-400">Infineon Launchpad Hackathon 2025</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <hr class="border-gray-800 my-16">
+
+        <!-- 6. CONTACT SECTION -->
+        <section id="contact" class="py-16 text-center">
+            <h2 class="text-4xl font-extrabold mb-6 scroll-reveal" style="color: var(--color-primary);">Get In Touch</h2>
+            <p class="max-w-xl mx-auto text-gray-400 text-lg mb-10 scroll-reveal">
+                Have a project or a question? I'm always open to discussing new opportunities in software development.
+            </p>
+
+            <div class="flex justify-center space-x-8 scroll-reveal">
+                <!-- Email -->
+                <a href="mailto:bharathishekar005@gmail.com" class="p-4 rounded-full bg-gray-900 hover:bg-gray-800 transition duration-300 text-2xl" title="Email" style="color: var(--color-primary);">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/Bharathi-linkdedin" target="_blank" class="p-4 rounded-full bg-gray-900 hover:bg-gray-800 transition duration-300 text-2xl" title="LinkedIn" style="color: var(--color-primary);">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <!-- Phone (Mobile only) -->
+                <a href="tel:+918072712477" class="p-4 rounded-full bg-gray-900 hover:bg-gray-800 transition duration-300 text-2xl" title="Call" style="color: var(--color-primary);">
+                    <i class="fas fa-phone"></i>
+                </a>
+            </div>
+            
+            <p class="mt-8 text-gray-500 scroll-reveal">
+                bharathishekar005@gmail.com | +91 8072712477
+            </p>
+        </section>
+        
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="text-center py-6 border-t border-gray-800">
+        <p class="text-gray-500 text-sm">
+            Designed and Coded with passion by S Bharathi &copy; 2025
+        </p>
+    </footer>
+
+    <!-- JAVASCRIPT FOR ANIMATIONS AND SCROLL REVEAL -->
+    <script>
+        // === 1. TYPING ANIMATION SCRIPT ===
+        document.addEventListener("DOMContentLoaded", function() {
+            const textElement = document.getElementById('typewriter-text');
+            const words = ["Full Stack Developer.", "Problem Solver.", "Java Programmer.", "ML Enthusiast."];
+            let wordIndex = 0;
+            let charIndex = 0;
+            let isDeleting = false;
+
+            function type() {
+                const currentWord = words[wordIndex];
+                
+                if (isDeleting) {
+                    textElement.textContent = currentWord.substring(0, charIndex - 1);
+                    charIndex--;
+                } else {
+                    textElement.textContent = currentWord.substring(0, charIndex + 1);
+                    charIndex++;
+                }
+                
+                // Add blinking cursor class
+                textElement.classList.toggle('typing-cursor', true); 
+
+                let typeSpeed = isDeleting ? 40 : 100;
+
+                // Check if word is fully typed
+                if (!isDeleting && charIndex === currentWord.length) {
+                    typeSpeed = 2000; // Pause at the end of the word
+                    isDeleting = true;
+                } 
+                
+                // Check if word is fully deleted
+                else if (isDeleting && charIndex === 0) {
+                    isDeleting = false;
+                    wordIndex = (wordIndex + 1) % words.length; // Move to next word
+                    typeSpeed = 500; // Short pause before typing next word
+                }
+
+                setTimeout(type, typeSpeed);
+            }
+
+            // Start the animation after a slight delay
+            setTimeout(type, 500); 
+        });
+
+        // === 2. SCROLL REVEAL (INTERSECTION OBSERVER) SCRIPT ===
+        document.addEventListener("DOMContentLoaded", function() {
+            const elements = document.querySelectorAll('.scroll-reveal');
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        // Stop observing once visible to prevent re-triggering
+                        observer.unobserve(entry.target); 
+                    }
+                });
+            }, {
+                root: null, // viewport
+                rootMargin: '0px',
+                threshold: 0.2 // Trigger when 20% of the item is visible
+            });
+
+            elements.forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+</body>
+</html>
