@@ -208,54 +208,51 @@
             </div>
         </section>
 
-       
-                      <hr class="border-gray-800 my-16">
+        <hr class="border-gray-800 my-16">
 
         <section id="projects" class="py-16">
             <h2 class="text-4xl font-extrabold mb-10 text-center scroll-reveal" style="color: var(--color-primary);">Key Projects</h2>
-            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div class="projects-grid md:grid-cols-2 max-w-5xl mx-auto">
                 
                 <div class="project-card p-6 rounded-xl border-2 border-gray-700 bg-gray-900 shadow-xl transition-all duration-300 scroll-reveal delay-100">
-                    <div class="h-40 bg-gray-800 rounded-lg mb-4 flex items-center justify-center text-gray-500">
-                        
+                    <div class="project-details">
+                        <h3 class="text-2xl font-semibold mb-3" style="color: var(--color-primary);">Diabetes Prediction (ML)</h3>
+                        <p class="text-gray-400 mb-4">
+                            Built a user-friendly web application using Machine Learning for real-time diabetes risk assessment from user health data.
+                        </p>
+                        <p class="text-sm font-medium mb-4">
+                            <span class="font-bold text-white">Focus:</span> Enabled real-time risk assessment with visual insights via Matplotlib and Seaborn.
+                        </p>
                     </div>
-
-                    <h3 class="text-2xl font-semibold mb-3" style="color: var(--color-primary);">Diabetes Prediction (ML)</h3>
-                    <p class="text-gray-400 mb-4">
-                        Built a user-friendly web application using Machine Learning for real-time diabetes risk assessment from user health data.
-                    </p>
-                    <p class="text-sm font-medium mb-4">
-                        <span class="font-bold text-white">Focus:</span> Enabled real-time risk assessment with visual insights via Matplotlib and Seaborn.
-                    </p>
-                    <div class="flex flex-wrap gap-2 text-xs font-semibold mb-4">
+                    
+                    <div class="flex flex-wrap gap-2 text-xs font-semibold mt-auto">
                         <span class="bg-blue-600/50 px-3 py-1 rounded-full">Python</span>
                         <span class="bg-blue-600/50 px-3 py-1 rounded-full">Machine Learning</span>
                         <span class="bg-blue-600/50 px-3 py-1 rounded-full">Streamlit</span>
                         <span class="bg-blue-600/50 px-3 py-1 rounded-full">Random Forest</span>
                     </div>
-                    
-                
+                </div>
 
-         <div class="project-card p-6 rounded-xl border-2 border-gray-700 bg-gray-900 shadow-xl transition-all duration-300 scroll-reveal delay-200">
-                    <div class="h-40 bg-gray-800 rounded-lg mb-4 flex items-center justify-center text-gray-500">
-                        
+                <div class="project-card p-6 rounded-xl border-2 border-gray-700 bg-gray-900 shadow-xl transition-all duration-300 scroll-reveal delay-200">
+                    <div class="project-details">
+                        <h3 class="text-2xl font-semibold mb-3" style="color: var(--color-primary);">Museum Ticket Booking (ChatBot)</h3>
+                        <p class="text-gray-400 mb-4">
+                            Designed a multilingual chatbot system for ticket booking, exhibit info, and confirmations, enhancing user experience.
+                        </p>
+                        <p class="text-sm font-medium mb-4">
+                            <span class="font-bold text-white">Achievement:</span> Shortlisted for the *MSME Hackathon 4.0 2024* for this innovative idea.
+                        </p>
                     </div>
                     
-                    <h3 class="text-2xl font-semibold mb-3" style="color: var(--color-primary);">Museum Ticket Booking (ChatBot)</h3>
-                    <p class="text-gray-400 mb-4">
-                        Designed a multilingual chatbot system for ticket booking, exhibit info, and confirmations, enhancing user experience.
-                    </p>
-                    <p class="text-sm font-medium mb-4">
-                        <span class="font-bold text-white">Achievement:</span> Shortlisted for the *MSME Hackathon 4.0 2024* for this innovative idea.
-                    </p>
-                    <div class="flex flex-wrap gap-2 text-xs font-semibold mb-4">
+                    <div class="flex flex-wrap gap-2 text-xs font-semibold mt-auto">
                         <span class="bg-yellow-600/50 px-3 py-1 rounded-full">Java</span>
                         <span class="bg-yellow-600/50 px-3 py-1 rounded-full">DialogFlow</span>
                         <span class="bg-yellow-600/50 px-3 py-1 rounded-full">HTML/CSS</span>
                         <span class="bg-yellow-600/50 px-3 py-1 rounded-full">Oracle JDBC</span>
                     </div>
-
-        
+                </div>
+            </div>
+        </section>
 
         <hr class="border-gray-800 my-16">
 
@@ -337,7 +334,8 @@
         // === 1. TYPING ANIMATION SCRIPT ===
         document.addEventListener("DOMContentLoaded", function() {
             const textElement = document.getElementById('typewriter-text');
-            const words = ["Full Stack Developer.", "Problem Solver.", "Java Programmer.""];
+            // Added "ML Enthusiast." back, as it was missing in the script block in your input.
+            const words = ["Full Stack Developer.", "Problem Solver.", "Java Programmer.", "ML Enthusiast."]; 
             let wordIndex = 0;
             let charIndex = 0;
             let isDeleting = false;
@@ -403,4 +401,3 @@
     </script>
 </body>
 </html>
-
