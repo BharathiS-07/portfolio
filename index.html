@@ -71,6 +71,19 @@
         .profile-pic:hover {
             transform: scale(1.05);
         }
+        
+        /* New Project alignment style: Use Flexbox on the card wrapper to keep them aligned */
+        .projects-grid {
+            display: grid;
+            gap: 2rem;
+        }
+        .project-card {
+            display: flex;
+            flex-direction: column;
+        }
+        .project-details {
+            flex-grow: 1; /* Allows the content area to fill the space */
+        }
 
     </style>
 </head>
@@ -199,21 +212,24 @@
 
         <section id="projects" class="py-16">
             <h2 class="text-4xl font-extrabold mb-10 text-center scroll-reveal" style="color: var(--color-primary);">Key Projects</h2>
-            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+            <div class="projects-grid md:grid-cols-2 max-w-5xl mx-auto">
                 
                 <div class="project-card p-6 rounded-xl border-2 border-gray-700 bg-gray-900 shadow-xl transition-all duration-300 scroll-reveal delay-100">
                     <div class="h-40 bg-gray-800 rounded-lg mb-4 flex items-center justify-center text-gray-500 overflow-hidden">
-                        Project Visual Placeholder
+                        Machine Learning Project
                     </div>
 
-                    <h3 class="text-2xl font-semibold mb-3" style="color: var(--color-primary);">Diabetes Prediction System (Machine Learning)</h3>
-                    <p class="text-gray-400 mb-4">
-                        Developed a production-ready, interactive web application for early-stage diabetes risk assessment using the Pima Indian Diabetes Dataset.
-                    </p>
-                    <p class="text-sm font-medium mb-4">
-                        <span class="font-bold text-white">Technical Highlights:</span> Achieved a validated 85%+ accuracy using the Random Forest Classifier. The solution is containerized and deployed for real-time risk prediction, accepting 8 critical patient metrics.
-                    </p>
-                    <div class="flex flex-wrap gap-2 text-xs font-semibold mb-4">
+                    <div class="project-details">
+                        <h3 class="text-2xl font-semibold mb-3" style="color: var(--color-primary);">Diabetes Prediction System</h3>
+                        <p class="text-gray-400 mb-4">
+                            Developed a production-ready, interactive web application for early-stage diabetes risk assessment using the Pima Indian Diabetes Dataset.
+                        </p>
+                        <p class="text-sm font-medium mb-4">
+                            <span class="font-bold text-white">Technical Highlights:</span> Achieved a validated 85%+ accuracy using the Random Forest Classifier. The solution is containerized and deployed for real-time risk prediction, accepting 8 critical patient metrics.
+                        </p>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-2 text-xs font-semibold mt-auto">
                         <span class="bg-blue-600/50 px-3 py-1 rounded-full">Python</span>
                         <span class="bg-blue-600/50 px-3 py-1 rounded-full">Random Forest</span>
                         <span class="bg-blue-600/50 px-3 py-1 rounded-full">Streamlit (Deployment)</span>
@@ -223,17 +239,20 @@
 
                 <div class="project-card p-6 rounded-xl border-2 border-gray-700 bg-gray-900 shadow-xl transition-all duration-300 scroll-reveal delay-200">
                     <div class="h-40 bg-gray-800 rounded-lg mb-4 flex items-center justify-center text-gray-500 overflow-hidden">
-                        Project Visual Placeholder
+                        ChatBot System
                     </div>
                     
-                    <h3 class="text-2xl font-semibold mb-3" style="color: var(--color-primary);"> Museum ChatBot Ticketing System </h3>
-                    <p class="text-gray-400 mb-4">
-                        Developed an automated, multilingual (English/Tamil) conversational system to handle ticket booking, exhibit information, and secure confirmations.
-                    </p>
-                    <p class="text-sm font-medium mb-4">
-                        <span class="font-bold text-white">Core Architecture:</span> Utilized DialogFlow for Natural Language Understanding (NLU), with the fulfillment logic written in Java (JDBC), and transaction data persistently stored in Oracle DB.
-                    </p>
-                    <div class="flex flex-wrap gap-2 text-xs font-semibold mb-4">
+                    <div class="project-details">
+                        <h3 class="text-2xl font-semibold mb-3" style="color: var(--color-primary);">Museum ChatBot Ticketing System</h3>
+                        <p class="text-gray-400 mb-4">
+                            Developed an automated, multilingual (English/Tamil) conversational system to handle ticket booking, exhibit information, and secure confirmations.
+                        </p>
+                        <p class="text-sm font-medium mb-4">
+                            <span class="font-bold text-white">Core Architecture:</span> Utilized DialogFlow for Natural Language Understanding (NLU), with the fulfillment logic written in Java (JDBC), and transaction data persistently stored in Oracle DB.
+                        </p>
+                    </div>
+                    
+                    <div class="flex flex-wrap gap-2 text-xs font-semibold mt-auto">
                         <span class="bg-yellow-600/50 px-3 py-1 rounded-full">DialogFlow (NLU)</span>
                         <span class="bg-yellow-600/50 px-3 py-1 rounded-full">Java (Fulfillment Logic)</span>
                         <span class="bg-yellow-600/50 px-3 py-1 rounded-full">Oracle DB</span>
